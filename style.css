@@ -1,0 +1,104 @@
+/* Write your CSS here */
+body {
+	font-family: 'Abril Fatface', cursive;
+	background-color: #fef6fb;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Bebas Neue', cursive;
+	color: #400082;
+}
+
+h2 {
+	font-family: 'Bebas Neue', cursive;
+}
+
+p {
+	color: #7e0cf5;
+}
+
+a {
+	text-decoration: none;
+	background: #d77fa1
+}
+
+a:hover {
+	text-decoration: none;
+	color: #d77fa1;
+	background: #400082;
+}
+
+#header{
+  background-image: url("https://images.unsplash.com/photo-1528458909336-e7a0adfed0a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9");
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+#header h1 {
+  font-size: 50px;
+}
+#header p {
+  margin-bottom: 40px;
+  opacity: 0.8;
+  font-size: 30px;
+  font-weight: lighter;
+}
+#header img {
+  border-radius: 50%;
+}
+#footer{
+  padding: 30px;
+  background-color: #d6e5fa;
+  color: lightgrey;
+}
+
+#footer p {
+	color: #400082;
+}
+
+.card-item {
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11);
+  padding: 16px;
+  margin: 100px 0px;
+}
+.card-item img {
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.button-purple {
+	text-decoration: none;
+	background-color: #d77fa1;
+	color: #400082;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11);
+	padding: 15px 20px;
+}
+.button-purple:hover {
+	text-decoration: none;
+	color: #d77fa1;
+	background-color: #400082;
+}
+
+.cards-display {
+	grid-template-columns: 1fr 1fr 1fr;
+	display: grid;
+	grid-gap: 20px;
+}
+
+@media(max-width: 992px){
+  .card-item{
+  width: 750px;
+  }
+}
+@media(max-width: 768px){
+  .card-item{
+  width: 90%;
+  grid-template-columns: 1fr;
+  }
+}
